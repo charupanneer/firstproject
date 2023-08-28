@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+.vl{
+    border-left: 0.5px solid rgb(231, 232, 231);
+    height: 110px;
+  }
+
+.bCard{
+border-radius: 16px;
+}
+.cCard{
+    border-radius:8px;
+}
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card bCard">
+                    <div class="card-header">
+                     <div class="row">
+                        <div class="col text-left"><h5>Tsugami1 (D_CNC001)</h5></div>
+                        <div class="col text-right"><h6>Part Name: <b>Spring</b></h6>
+                       </div>
+                     </div> 
+                    </div>
+                    <div class="card-body"><div class="row">
+                                    <div class="col">
+                                        <div class="progress-bar-container d-flex justify-content-center">
+                                            <div class="progress-bar OEE">
+                                              <progress id="OEE" min="0" max="100" value="62"></progress>
+                                            </div>
+                                            </div>
+                            <h6 class="text-center"><label for="OEE">OEE</label></h6>
+                                    </div>
+                                    <div class="vl"></div>
+
+                                    <div class="col">
+                                          <div class="progress-bar-container d-flex justify-content-center">
+                                            <div class="progress-bar Availability">
+                                              <progress id="Availability" min="0" max="100" value="87"></progress>
+                                            </div>
+                                           </div>
+                            <h6 class="text-center"><label for="Availability">Availability</label></h6>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress-bar-container d-flex justify-content-center">
+                                          <div class="progress-bar Quality">
+                                            <progress id="Quality" min="0" max="100" value="87"></progress>
+                                          </div>
+                                        </div>
+                                        <h6 class="text-center"><label for="Quality">Quality</label></h6>
+                                  </div>
+                                    <div class="col">
+                                          <div class="progress-bar-container d-flex justify-content-center">
+                                            <div class="progress-bar Performance">
+                                              <progress id="Performance" min="0" max="100" value="73"></progress>
+                                            </div>
+                                          </div>
+                                          <h6 class="text-center"><label for="Performance">Performance</label></h6>
+                                    </div>
+                                </div>
+
+
+
+                            <div class="row">
+                                <div class="col p-1">
+                                    <div class="card px-2 py-0 border d-flex flex-row align-items-center cCard">
+                                        <i class="fa fa-check-square"  style="font-size:24px;color: rgb(33, 134, 61); padding:10px; background-color: rgb(186, 244, 225); border-radius:4px;"></i>
+                                        <div class="pl-2">
+                                            <p class="m-0">Unit Produced</p>
+                                            <h5>20/40</h5>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col p-1">
+                                    <div class="card px-2 py-0 border  d-flex  flex-row align-items-center cCard">
+                                        <i class="fa fa-clock-o" style="font-size:24px; color:rgb(185, 53,132);padding:10px; background-color:rgb(255, 203, 234); border-radius:4px;"></i>
+                                        <div class="pl-2">
+                                            <p class="m-0">Production Rate</p>
+                                            <h5>20/hr</h5>
+                                        </div>
+                                       
+    
+                                    </div>
+                                </div>
+                                <div class="col p-1">
+                                    <div class="card px-2 py-0 border d-flex flex-row align-items-center cCard">
+                                        <i class="fa fa-user" style="font-size:24px; color:rgb(255, 165, 0); padding:10px; background-color:rgb(254, 239, 202); border-radius:4px;"></i><div class="pl-2">
+                                            <p class="m-0">Operator</p>
+                                        <h5>Charu</h5>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+
+ 
+                               
+                               
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+  
+  
+</html>
