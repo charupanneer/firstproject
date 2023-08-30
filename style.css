@@ -18,20 +18,21 @@
   @keyframes Performance-progress {
     to { --progress-value: 73; }
   }
-  
   .progress-bar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    
     
     /* to center the percentage value */
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .progress-bar {
-    width: 100px;
-    height: 100px;
+
+   .OEE {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     
     /* to center the percentage value */
@@ -110,14 +111,40 @@
     flex-wrap: wrap;
     max-width: 100%;
   }
-  
-  h {
-    text-align: center;
-  }
-  
   progress {
     visibility: hidden;
     width: 0;
     height: 0;
   }
+
+  .row {
+padding:10px;
+   
+  }
+  .dotDown {
+    height: 12px;
+    width: 12px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    display: flex;
+    padding: 4;
+  }
+  .dotIdle {
+    height: 12px;
+    width: 12px;
+    background-color: #FFA500;
+    border-radius: 50%;
+    display: flex;
+    padding: 4;
+  }
+  .dotProduction {
+    height: 12px;
+    width: 12px;
+    background-color: #21863D;
+    border-radius: 50%;
+    display: flex;
+    padding: 4;
+  }
+  
+  
   
