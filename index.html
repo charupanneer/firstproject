@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>card</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,6 +14,160 @@
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <style>
+
+    .fontSquare{ 
+        font-size:24px;
+        color: rgb(33, 134, 61);
+        padding:10px;
+        background-color: rgb(186, 244, 225); 
+        border-radius:4px;
+    }
+    .fontClock{
+        font-size:24px; 
+        color:rgb(185, 53,132);
+        padding:10px; 
+        background-color:rgb(255, 203, 234); 
+        border-radius:4px;
+    }
+    .fontUser{
+        font-size:24px; 
+        color:rgb(255, 165, 0); 
+        padding:10px; 
+        background-color:rgb(254, 239, 202); 
+        border-radius:4px;
+    }
+    .uDiv p{
+    font-size: medium;
+    }
+    .uDiv h5{
+    font-size: larger;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1120px) {
+    .progress-bar{
+        height: 60px;
+        width:  60px;
+        border-radius: 30%;
+    }
+    .OEE {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .OEE::before{
+        color: black;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    .Availability::before{
+        color: black;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    .Quality::before{
+        color: black;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    .Performance::before{
+        color: black;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    .names{
+            font-size: x-small;  
+        }
+        .heading{
+            font-size: small;
+        }
+    }
+    @media only  screen and (max-width: 600px) {
+        .progress-bar{
+            height: 60px;
+            width:  60px;
+            border-radius: 30%;
+        }
+        .OEE {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+        .OEE::before{
+            color: black;
+            font-size: small;
+            font-weight: 600;
+        }
+        .Availability::before{
+            color: black;
+            font-size: small;
+            font-weight: 600;
+        }
+        .Quality::before{
+            color: black;
+            font-size: small;
+            font-weight: 600;
+        }
+        .Performance::before{
+            color: black;
+            font-size: small;
+            font-weight: 600;
+        }
+        .names{
+            font-size: small;  
+        }
+        .heading{
+            font-size: large;
+        }
+        .fontSquare{
+            font-size:16px;
+            color: rgb(33, 134, 61);
+            padding:8px;
+            background-color: rgb(186, 244, 225); 
+            border-radius:4px;
+        }
+        .fontClock{
+            font-size:16px; 
+            color:rgb(185, 53,132);
+            padding:8px; 
+            background-color:rgb(255, 203, 234); 
+            border-radius:4px;
+        }
+        .fontUser{
+            font-size:16px; 
+            color:rgb(255, 165, 0); 
+            padding:8px; 
+            background-color:rgb(254, 239, 202); 
+            border-radius:4px;
+        }.uDiv p{
+        font-size: x-small;
+        }
+        .uDiv h5{
+        font-size: medium;
+        }
+        }
+
+/* .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;} */
 .vl{
     border-left: 0.5px solid rgb(231, 232, 231);
     height: 110px;
@@ -25,20 +179,20 @@ border-radius: 16px;
 .cCard{
     border-radius:8px;
 }
+
 </style>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-1">
                 <div class="card bCard">
                     <div class="card-header">
                      <div class="row">
-                        <div class="col text-left"><h5>Tsugami1 (D_CNC001)</h5></div>
-                        <div class="col text-right"><h6>Part Name: <b>Spring</b></h6>
+                        <div class="col text-left"><h5 class="heading">Tsugami1 (D_CNC001)</h5></div>
+                        <div class="col text-right"><h6 class="heading">Part Name: <b>Spring</b></h6>
                        </div>
                      </div> 
                     </div>
-                    <h1>Hello World</h1>
                     <div class="card-body"><div class="row">
                                     <div class="col">
                                         <div class="progress-bar-container d-flex justify-content-center">
@@ -46,17 +200,16 @@ border-radius: 16px;
                                               <progress id="OEE" min="0" max="100" value="62"></progress>
                                             </div>
                                             </div>
-                            <h6 class="text-center"><label for="OEE">OEE</label></h6>
+                            <h6 class="text-center"><label class="names" for="OEE">OEE</label></h6>
                                     </div>
                                     <div class="vl"></div>
-
                                     <div class="col">
                                           <div class="progress-bar-container d-flex justify-content-center">
                                             <div class="progress-bar Availability">
                                               <progress id="Availability" min="0" max="100" value="87"></progress>
                                             </div>
                                            </div>
-                            <h6 class="text-center"><label for="Availability">Availability</label></h6>
+                            <h6 class="text-center"><label class="names" for="Availability">Availability</label></h6>
                                     </div>
                                     <div class="col">
                                         <div class="progress-bar-container d-flex justify-content-center">
@@ -64,7 +217,7 @@ border-radius: 16px;
                                             <progress id="Quality" min="0" max="100" value="87"></progress>
                                           </div>
                                         </div>
-                                        <h6 class="text-center"><label for="Quality">Quality</label></h6>
+                                        <h6 class="text-center"><label class="names" for="Quality">Quality</label></h6>
                                   </div>
                                     <div class="col">
                                           <div class="progress-bar-container d-flex justify-content-center">
@@ -72,60 +225,61 @@ border-radius: 16px;
                                               <progress id="Performance" min="0" max="100" value="73"></progress>
                                             </div>
                                           </div>
-                                          <h6 class="text-center"><label for="Performance">Performance</label></h6>
+                                          <h6 class="text-center"><label class="names" for="Performance">Performance</label></h6>
                                     </div>
-                                </div>
+                    </div>
 
 
-
-                            <div class="row">
-                                <div class="col p-1">
+                            <div class="row p-0">
+                                
+                                <div class="col-4 p-1 ">
                                     <div class="card px-2 py-0 border d-flex flex-row align-items-center cCard">
-                                        <i class="fa fa-check-square"  style="font-size:24px;color: rgb(33, 134, 61); padding:10px; background-color: rgb(186, 244, 225); border-radius:4px;"></i>
-                                        <div class="pl-2">
+                                        <i class="fa fa-check-square fontSquare"></i>
+                                        <div class="pl-2 uDiv">
                                             <p class="m-0">Unit Produced</p>
-                                            <h5>20/40</h5>
-                                            </div>
+                                        <h5>20/40</h5>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col p-1">
+                                <div class="col-4 p-1">
                                     <div class="card px-2 py-0 border  d-flex  flex-row align-items-center cCard">
-                                        <i class="fa fa-clock-o" style="font-size:24px; color:rgb(185, 53,132);padding:10px; background-color:rgb(255, 203, 234); border-radius:4px;"></i>
-                                        <div class="pl-2">
+                                        <i class="fa fa-clock-o fontClock"></i>
+                                        <div class="pl-2 uDiv">
                                             <p class="m-0">Production Rate</p>
-                                            <h5>20/hr</h5>
+                                        <h5>20/hr</h5>
                                         </div>
                                        
     
                                     </div>
                                 </div>
-                                <div class="col p-1">
+                                <div class="col-4 p-1">
                                     <div class="card px-2 py-0 border d-flex flex-row align-items-center cCard">
-                                        <i class="fa fa-user" style="font-size:24px; color:rgb(255, 165, 0); padding:10px; background-color:rgb(254, 239, 202); border-radius:4px;"></i><div class="pl-2">
+                                        <i class="fa fa-user fontUser"></i>
+                                        <div class="pl-2 uDiv">
                                             <p class="m-0">Operator</p>
                                         <h5>Charu</h5>
                                         </div>
-                                        
                                     </div>
+                                </div>      
+                                    </div>
+                                <div class="row m-0">
+                                <div class=" col d-flex align-items-center">
+                                    <div class="dotDown m-1"></div>
+                                    <p class="m-0">Down Time</p>
                                 </div>
-
-
- 
-                               
-                               
-                            </div>
-
+                                <div class="col d-flex align-items-center">
+                                    <div class="dotIdle m-1"></div>
+                                    <p class="m-0">Idle</p>
+                                </div>
+                                <div class= "col d-flex align-items-center">
+                                    <div class="dotProduction m-1"></div>
+                                    <p class="m-0">Production Time</p>
+                                </div>
 
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </body>
-
-  
-  
-</html>
+</html
